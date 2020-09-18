@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="qiantai.master.cs" Inherits="HotelTeacher.qiantai.qiantai" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <title>好运来</title>
+   
+    <link href="Styles/AdminCss.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="top">
+        </div>
+        <div id="nav">
+            <div id="navlink">
+                <ul>
+                    <li><a href="/qiantai/qiantai.aspx">首页</a></li>
+                    
+                    <li><a href="/qiantai/caipin.aspx">酒店菜品</a></li>
+                 
+                    <li><a href="/qiantai/xinwen.aspx">促销活动</a></li>
+         
+
+                    <li><a href="/qiantai/zhaopin.aspx">招聘</a></li>
+                    <li><a class="navLast" href="/Adminhyl/ExitSys.ashx">退出系统</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <div id="bq">
+               &nbsp;&nbsp;版权所有 Copyright(C)2010-2020
+                好运来酒店&nbsp;&nbsp;&nbsp;<asp:Literal ID="ltaAdmin" runat="server"></asp:Literal>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
